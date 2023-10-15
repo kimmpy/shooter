@@ -7,8 +7,8 @@ public class PlayerLook : MonoBehaviour
     public Camera cam;
     private float xRotation = 0f;
     
-    public float xSens = 30f;
-    public float ySens = 30f;
+    public float xSens = 50f;
+    public float ySens = 50f;
     // Start is called before the first frame update
     public void ProcessLook(Vector2 input)
     {
@@ -19,6 +19,7 @@ public class PlayerLook : MonoBehaviour
         xRotation -= (mouseY * Time.deltaTime) * ySens;
         xRotation = Mathf.Clamp(xRotation, -80f, 80f);
         cam.transform.localRotation = Quaternion.Euler(xRotation, 0, 0);
+        
         //rotate player to look left/right
         transform.Rotate(Vector3.up * (mouseX * Time.deltaTime) * xSens);
     }
