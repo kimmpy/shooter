@@ -14,15 +14,9 @@ public class Keypad : Interactable
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     protected override void Interact()
     {
         doorOpen = !doorOpen;
-        door.GetComponent<Animator>().setBool("isOpen", openDoor);
+        door.GetComponent<Animator>();
     }
-    
 }
