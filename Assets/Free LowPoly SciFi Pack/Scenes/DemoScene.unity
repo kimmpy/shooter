@@ -943,8 +943,31 @@ PrefabInstance:
     - {fileID: -4140438397352004071, guid: 6bb13e9ca39984c4a8ea6324ffc3ff9d, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7401250269683628566, guid: 6bb13e9ca39984c4a8ea6324ffc3ff9d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3678548366636626699}
   m_SourcePrefab: {fileID: 100100000, guid: 6bb13e9ca39984c4a8ea6324ffc3ff9d, type: 3}
+--- !u!1 &3678548366636626698 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7401250269683628566, guid: 6bb13e9ca39984c4a8ea6324ffc3ff9d, type: 3}
+  m_PrefabInstance: {fileID: 3678548366636626697}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3678548366636626699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3678548366636626698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98bf09887621647dea3344c4cd663ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  promptMessage: Press Button
+  door: {fileID: 1026715174}
+  doorOpen: 0
 --- !u!1001 &7081147696936265290
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -959,7 +982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 933535241394324747, guid: f62cf65a180bb4e1985524bd273aaae7, type: 3}
       propertyPath: m_Layer
-      value: 5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7548556904786650022, guid: f62cf65a180bb4e1985524bd273aaae7, type: 3}
       propertyPath: m_LocalPosition.x
